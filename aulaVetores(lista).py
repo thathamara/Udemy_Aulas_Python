@@ -79,3 +79,52 @@ print("último elemento:", ultimo)
     
     
 """
+# lista = ['Thamara',25,1.65,True]
+# for item in lista:
+#     print(item)
+    
+#     indices=range(len(lista)) #tamanho da lista
+#     for i in indices:
+#         print(f'Índice {i}: {lista[i]}')
+        
+        
+# lista= ["maçã","banana","laranja"]
+# listaEnumerada= enumerate(lista)
+# for item in listaEnumerada:
+#     print(item)
+        
+"""
+Faça uma lista de compras com listas
+O usuario deve poder adicionar, remover e visualizar itens na lista de compras.
+"""
+lista_compras = []
+
+opcao=''
+
+while True:
+    
+ opcao=input("Selecione uma opção: [I]nserir item, [R]emover item, [V]isualizar ou [S]air lista: ")
+    
+ if opcao == 'I':
+    produto = input("Digite o nome do produto para adicionar à lista de compras: ")
+    lista_compras.append(produto)
+    print("Lista de compras atual:", lista_compras)
+ elif opcao == 'V':
+    print("Lista de compras:", lista_compras)
+ elif opcao == 'R':
+     remover=input("Digite o nome do item que deseja remover da lista de compras: ")
+     if remover in lista_compras:
+      lista_compras.remove(remover)
+      print(f"{remover} foi removido da lista de compras.")
+ elif opcao == 'S':
+      print("Saindo da lista de compras.") 
+      break
+
+    
+    
+    
+
+
+
+            
+            
